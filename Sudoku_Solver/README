@@ -1,0 +1,21 @@
+This program is a sudoku solver which use self implemented
+Dynamic Queue and Sudoku Table Class. The logic behind this
+program is it manually try numbers and see if it fits. If it
+fits, then it continues to other index which is (y++) or when
+y = 8, (x++, y = 0). If it is not, then it take coordinate from
+queue and change the previous index. And continue until sudoku
+is solved. 
+Queue Class Methods:
+bool isEmpty()
+void enqueue(int x, int y)
+void dequeue(int & x, int & y)
+Sudoku Class Methods:
+Constructor which creates a 9x9 sudoku table
+void inputMatrix() takes input of an sudoku table from user
+bool isTrue(int x, int y) checks if the given index is fit
+bool isFinished() checks if the sudoku is finished
+void change(int x, int y, int number) change the value of the given index
+int number(int x, int y) returns the given index
+int bNumber(int x, int y) returns if the given index is fixed number or not
+void plusOne(int x, int y) increment the given index by one
+void printTable()
